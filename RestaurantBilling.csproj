@@ -42,10 +42,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcceptanceTests\Context\OrderContext.cs" />
-    <Compile Include="AcceptanceTests\Steps\AddOrderSteps.cs" />
-    <Compile Include="AcceptanceTests\Steps\RemoveItemSteps.cs" />
-    <Compile Include="AcceptanceTests\Steps\UpdateItemSteps.cs" />
+    <Compile Include="Tests\Context\OrderContext.cs" />
+    <Compile Include="Tests\Steps\AddOrderSteps.cs" />
+    <Compile Include="Tests\Steps\RemoveItemSteps.cs" />
+    <Compile Include="Tests\Steps\UpdateItemSteps.cs" />
     <Compile Include="Src\BillingService.cs" />
     <Compile Include="Src\IBillingService.cs" />
     <Compile Include="Src\Item.cs" />
@@ -72,9 +72,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="AcceptanceTests\Features\AddOrder.feature" />
-    <None Include="AcceptanceTests\Features\RemoveItem.feature" />
-    <None Include="AcceptanceTests\Features\UpdateItem.feature" />
+    <None Include="Tests\Features\AddOrder.feature" />
+    <None Include="Tests\Features\RemoveItem.feature" />
+    <None Include="Tests\Features\UpdateItem.feature" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -81,5 +81,25 @@ namespace RestaurantBilling.AcceptanceTests.Steps
         }
 
 
+        [Given(@"i order two same starters and one main")]
+        public void GivenIOrderTwoStartersAndOneMain()
+        {
+            List<Item> items = new List<Item>()
+            {
+                new Item("Veg Spring Rolls",ItemType.Starter),
+                new Item("Veg Spring Rolls",ItemType.Starter),
+                new Item("Tofu Pad Thai",ItemType.Mains),
+
+
+            };
+
+            IBillingService billingService = new BillingService();
+            var order = billingService.AddOrder(items);
+
+            _orderContext.order = order;
+            _orderContext.billingService = billingService;
+        }
+
+
     }
 }

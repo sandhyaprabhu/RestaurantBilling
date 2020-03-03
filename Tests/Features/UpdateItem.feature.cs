@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace RestaurantBilling.AcceptanceTests.Features
+namespace RestaurantBilling.Tests.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,7 +20,7 @@ namespace RestaurantBilling.AcceptanceTests.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class RemoveItemFeature
+    public partial class UpdateItemFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace RestaurantBilling.AcceptanceTests.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "RemoveItem.feature"
+#line 1 "UpdateItem.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,7 +48,7 @@ namespace RestaurantBilling.AcceptanceTests.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "RemoveItem", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "UpdateItem", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -63,9 +63,9 @@ namespace RestaurantBilling.AcceptanceTests.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "RemoveItem")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "UpdateItem")))
             {
-                global::RestaurantBilling.AcceptanceTests.Features.RemoveItemFeature.FeatureSetup(null);
+                global::RestaurantBilling.Tests.Features.UpdateItemFeature.FeatureSetup(null);
             }
         }
         
@@ -92,12 +92,12 @@ namespace RestaurantBilling.AcceptanceTests.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("01. Validate a single item is removed from the order")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "RemoveItem")]
-        public virtual void _01_ValidateASingleItemIsRemovedFromTheOrder()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("01. Validate a single maincourse item is updated to an existing order")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UpdateItem")]
+        public virtual void _01_ValidateASingleMaincourseItemIsUpdatedToAnExistingOrder()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01. Validate a single item is removed from the order", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01. Validate a single maincourse item is updated to an existing order", null, ((string[])(null)));
 #line 3
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -119,22 +119,22 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 4
-testRunner.Given("I remove a single item from an existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("I update a single maincourse item from an existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
-testRunner.Then("the total price should be 4.40", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("the total price should be 18.40", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("02. Validate multiple item are removed from the order")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "RemoveItem")]
-        public virtual void _02_ValidateMultipleItemAreRemovedFromTheOrder()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("02. Validate a single starter item is updated to an existing order")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UpdateItem")]
+        public virtual void _02_ValidateASingleStarterItemIsUpdatedToAnExistingOrder()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02. Validate multiple item are removed from the order", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02. Validate a single starter item is updated to an existing order", null, ((string[])(null)));
 #line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -156,22 +156,22 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 9
-testRunner.Given("I remove multiple items from an existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("I update a single starter item from an existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
-testRunner.Then("the total price should be 11.40", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("the total price should be 15.80", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("03. Validate an non existing item is removed from the order")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "RemoveItem")]
-        public virtual void _03_ValidateAnNonExistingItemIsRemovedFromTheOrder()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("03.Validate multiple items are updated to an existing order")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UpdateItem")]
+        public virtual void _03_ValidateMultipleItemsAreUpdatedToAnExistingOrder()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03. Validate an non existing item is removed from the order", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03.Validate multiple items are updated to an existing order", null, ((string[])(null)));
 #line 12
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -193,25 +193,24 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 13
-testRunner.Given("I remove non existing item from an existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("I update multiple items from an existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 14
-testRunner.Then("Item not found exception is thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-#line 15
-testRunner.Then("the total price should be 11.40", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("the total price should be 34.20", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("04. Validate No items removed from the existing order")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "RemoveItem")]
-        public virtual void _04_ValidateNoItemsRemovedFromTheExistingOrder()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("04. Validate an exception is thrown when items are updated from nonexisting order" +
+            "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UpdateItem")]
+        public virtual void _04_ValidateAnExceptionIsThrownWhenItemsAreUpdatedFromNonexistingOrder()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04. Validate No items removed from the existing order", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04. Validate an exception is thrown when items are updated from nonexisting order" +
+                    "", null, ((string[])(null)));
 #line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -233,25 +232,23 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 18
-testRunner.Given("I do not remove any items from an existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("I update items from an non-existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 19
-testRunner.Then("the total price should be 11.40", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("Order Not found exception is thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("05. Validate an exception is thrown when items are removed from nonexisting order" +
-            "")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "RemoveItem")]
-        public virtual void _05_ValidateAnExceptionIsThrownWhenItemsAreRemovedFromNonexistingOrder()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("05. Validate No items updated from the existing order")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UpdateItem")]
+        public virtual void _05_ValidateNoItemsUpdatedFromTheExistingOrder()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05. Validate an exception is thrown when items are removed from nonexisting order" +
-                    "", null, ((string[])(null)));
-#line 21
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05. Validate No items updated from the existing order", null, ((string[])(null)));
+#line 22
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -271,11 +268,11 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 22
-testRunner.Given("I remove items from an non-existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 23
-testRunner.Then("Order not found exception is thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Given("I do not update any items from an existing order", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 24
+testRunner.Then("the total price should be 11.40", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

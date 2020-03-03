@@ -13,3 +13,6 @@ Scenario:03. Validate multiple items are added to checkout
 Given i order two starters, two mains
 Then the total price should be 22.80
 
+Scenario:04. Validate duplicate items are added to checkout
+Given i order two same starters and one main
+Then the total price should be 15.80
