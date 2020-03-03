@@ -95,6 +95,20 @@ namespace RestaurantBilling.AcceptanceTests.Steps
 
         }
 
+        [Given(@"I remove a duplicate item from an existing order")]
+        public void GivenIRemoveADuplicateItemFromAnExistingOrder()
+        {
+            
+            new AddOrderSteps(_orderContext).GivenIOrderTwoStartersAndOneMain();
+            var orderId = _orderContext.order.GetOrderId();
+
+
+            var itemToRemove = new Item("Veg Spring Rolls", ItemType.Starter);
+
+            _orderContext.billingService.RemoveItem(orderId, itemToRemove);
+        }
+
+
 
     }
 }

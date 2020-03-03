@@ -22,4 +22,6 @@ Scenario:05. Validate an exception is thrown when items are removed from nonexis
 Given I remove items from an non-existing order
 Then Order not found exception is thrown
 
-
+Scenario:06. Validate an duplicate item is removed from an existing order
+Given I remove a duplicate item from an existing order
+Then the total price should be 11.40

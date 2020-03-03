@@ -34,7 +34,10 @@ namespace RestaurantBilling.Src
 
             var orderedItems = order.GetItems();
             if (orderedItems.Exists(i => i.GetItemName() == item.GetItemName()))
-               orderedItems.RemoveAll(i => i.GetItemName() == item.GetItemName());
+            {
+                var itemsToRemove = orderedItems.Find(i => i.GetItemName() == item.GetItemName());
+                orderedItems.Remove(itemsToRemove);
+            }
             else
                 throw new ItemNotFoundException();
 
