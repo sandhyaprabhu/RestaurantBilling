@@ -242,12 +242,12 @@ testRunner.Then("Order Not found exception is thrown", ((string)(null)), ((TechT
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("05. Validate No items removed from the existing order")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("05. Validate No items updated from the existing order")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "UpdateItem")]
-        public virtual void _05_ValidateNoItemsRemovedFromTheExistingOrder()
+        public virtual void _05_ValidateNoItemsUpdatedFromTheExistingOrder()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05. Validate No items removed from the existing order", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05. Validate No items updated from the existing order", null, ((string[])(null)));
 #line 22
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
